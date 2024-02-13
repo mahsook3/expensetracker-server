@@ -11,6 +11,7 @@ app.use(cors());
 // Replace with your MongoDB Atlas connection string
 const dbURI = process.env.DB_URI;
 
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const ExpenseSchema = new mongoose.Schema({
